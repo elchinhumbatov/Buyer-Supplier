@@ -9,8 +9,8 @@
 
 <body>
     <form action="">
-            <label for="Product">Select one: </label>
-           <select>
+            <label class="wow bounceInLeft" for="Product">Select one: </label>
+           <select class="wow flipInX" data-wow-duration="2s" data-wow-delay="0.5s"  >
             <option value="0"></option>
             <option value="1">Audi</option>
             <option value="2">BMW</option>
@@ -25,15 +25,21 @@
             <option value="11">Toyota</option>
             <option value="12">Volvo</option>
         </select>
-        <label for="Code">Enter Your Code: </label>
-        <input type="password" placeholder="Your Code" />
-        <label for="amount">Select Quantity or Weight:</label>
-        <input type="number" placeholder="Quantity" min="1" />
-        <input type="number" placeholder="Weight" min="0.5" step="0.5" />
-        <label for="date">Select Date and Time: </label>
-        <input type="date" />
-        <input type="time">
-        <textarea name="Comment" placeholder="Your Messsage" rows="5"></textarea>
-        <input type="submit">
+        <label class="wow bounceInLeft" for="Code">Enter Your Code: </label>
+        <input class="wow flipInX" data-wow-duration="2s" data-wow-delay="0.7s"   type="password" placeholder="Your Code" />
+        <label class="wow bounceInLeft" for="amount">Select Quantity or Weight:</label>
+        <input class="wow flipInX" data-wow-duration="2s" data-wow-delay="1s"   type="number" placeholder="Quantity" min="1" />
+        <input class="wow flipInX" data-wow-duration="2s" data-wow-delay="1s"  type="number" placeholder="Weight" min="0.5" step="0.5" />
+        <label class="wow bounceInLeft"  for="date">Select Date and Time: </label>
+        <input class="wow flipInX" data-wow-duration="2s" data-wow-delay="1.3s"  type="date" />
+        <input class="wow flipInX" data-wow-duration="2s" data-wow-delay="1.3s"   type="time">
+        <textarea class="wow flipInX" data-wow-duration="2s" data-wow-delay="1.5s" name="Comment" placeholder="Your Messsage" rows="5"></textarea>
+        <input class="wow flipInX" data-wow-duration="2s" data-wow-delay="1.7s"  type="submit">
     </form>
+
+    <link rel="stylesheet" href="animate.css" />
+    <script src="wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body></html>
